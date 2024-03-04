@@ -1,0 +1,25 @@
+---
+title: "Fetching Stock Data from Yahoo Finance"
+author: "Inmaculada Ruiz Morales"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+
+library(quantmod)
+
+# Get today's date and 10 days earlier
+end <- Sys.Date()  # Get today's date dynamically
+start <- end - 10  # Subtract 10 days from today
+
+# Fetch stock data from Supermicro Computers Inc
+Supermicro <- getSymbols("SMCI", src = "yahoo", from = start, to = end, auto.assign = FALSE)
+Supermicro
+```
