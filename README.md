@@ -8,4 +8,4 @@ How to fetch stock data from Yahoo!Finance using:
 
 The featured stocks in the exercise are my investment bets for this year 💵
 
-Easier to read here: https://inmaruiz.com/index.php/datascience/fetch/
+
